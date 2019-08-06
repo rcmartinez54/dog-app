@@ -11,9 +11,14 @@
             <h1>Random Dog Image Generator</h1>
         </header>
         <main role="main">
-            <h2>Click The Button for A New Pup!</h2>
-            <img src="" alt="placeholder">
-            <button>Get A New Pup</button>
+            <form id="js-get-new-dogs-form">
+                <label for="new-dogs-entry">Get new images</label>
+                <input type="text" name="new-dogs-entry" id="new-dogs-entry" placeholder="3">
+                <button>Get New Pups</button>
+            </form>
+            <div class="dog-image-container">
+                    <img src="" alt="placeholder">
+            </div>
         </main>
         <script
         src="https://code.jquery.com/jquery-3.4.1.min.js"
