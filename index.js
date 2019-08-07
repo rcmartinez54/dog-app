@@ -9,8 +9,6 @@ function getImages() {
         .catch(error => alert('Oops, Something is fishy. Try again later.'));
 }
 
-'https://dog.ceo/api/breed/' + variable + '/image/'
-
 function showResults(responseJson) {
     console.log(responseJson.message);
     for(let i = 0; i < responseJson.message.length; i++) {
