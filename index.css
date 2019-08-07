@@ -51,7 +51,61 @@ label {
 
 .footer {
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
     background: blue;
     color: #fff;
+}
+
+h3 {
+    display: flex;
+    align-items: center;
+}
+
+.psuedo-btn {
+    padding: 20px;
+    border: 2px solid #fff;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.psuedo-btn:hover {
+    background: #fff;
+    color: blue;
+    border: 2px solid #000;
+    transition: all 1s;
+}
+
+@media screen and (max-width: 650px) {
+    h1 {
+        word-spacing: 10px;
+    }
+}
+
+@media screen and (max-width: 560px) {
+    h1 {
+        word-spacing: 2px;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    h1 {
+        word-spacing: 0px;
+        font-size: 35px;
+    }
+    .results-img {
+        width: 300px;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    h1 {
+        font-size: 28px;
+    }
+    .psuedo-btn {
+        padding: 1px;
+    }
+    .results-img {
+        width: 300px;
+    }
 }
